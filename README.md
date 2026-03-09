@@ -1,2 +1,4 @@
 # solar-sys
-The solar system with true proportions
+The solar system with true proportions.
+
+
