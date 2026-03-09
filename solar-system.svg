@@ -1,98 +1,110 @@
-<svg width="151000" height="500" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="151000" xmlns="http://www.w3.org/2000/svg">
   <!-- 背景 -->
   <rect width="100%" height="100%" fill="#000011"/>
 
   <!-- 标题（固定在开头可见区域） -->
-  <text x="500" y="40" font-family="Arial" font-size="20" fill="#ffffff">太阳系真实比例图</text>
-  <text x="500" y="65" font-family="Arial" font-size="12" fill="#aaaaaa">天体大小与轨道距离完全按真实比例 | 1 AU = 5000 px | 岩石行星因太小用最小可见点表示</text>
+  <text x="250" y="55" font-family="Arial" font-size="20" fill="#ffffff" text-anchor="middle">太阳系真实比例图（俯视）</text>
+  <text x="250" y="78" font-family="Arial" font-size="12" fill="#aaaaaa" text-anchor="middle">天体大小与轨道距离完全按真实比例 | 1 AU = 5000 px</text>
+  <text x="250" y="95" font-family="Arial" font-size="12" fill="#aaaaaa" text-anchor="middle">岩石行星因太小用最小可见点表示</text>
 
-  <!-- 比例尺：每 5 AU 一个刻度 -->
-  <line x1="0" y1="450" x2="150500" y2="450" stroke="#333333" stroke-width="1"/>
-  <line x1="0" y1="445" x2="0" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="0" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="start">0</text>
+  <!-- 比例尺（左侧） -->
+  <line x1="30" y1="0" x2="30" y2="150500" stroke="#333333" stroke-width="1"/>
 
-  <line x1="5000" y1="445" x2="5000" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="5000" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">1 AU</text>
+  <line x1="25" y1="0" x2="35" y2="0" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="4" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">0</text>
 
-  <line x1="25000" y1="445" x2="25000" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="25000" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">5 AU</text>
+  <line x1="25" y1="5000" x2="35" y2="5000" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="5000" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">1 AU</text>
 
-  <line x1="50000" y1="445" x2="50000" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="50000" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">10 AU</text>
+  <line x1="25" y1="25000" x2="35" y2="25000" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="25000" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">5 AU</text>
 
-  <line x1="75000" y1="445" x2="75000" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="75000" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">15 AU</text>
+  <line x1="25" y1="50000" x2="35" y2="50000" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="50000" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">10 AU</text>
 
-  <line x1="100000" y1="445" x2="100000" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="100000" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">20 AU</text>
+  <line x1="25" y1="75000" x2="35" y2="75000" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="75000" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">15 AU</text>
 
-  <line x1="125000" y1="445" x2="125000" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="125000" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">25 AU</text>
+  <line x1="25" y1="100000" x2="35" y2="100000" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="100000" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">20 AU</text>
 
-  <line x1="150000" y1="445" x2="150000" y2="455" stroke="#ffffff" stroke-width="1"/>
-  <text x="150000" y="470" font-family="Arial" font-size="10" fill="#666666" text-anchor="middle">30 AU</text>
+  <line x1="25" y1="125000" x2="35" y2="125000" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="125000" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">25 AU</text>
 
-  <!-- 轨道线 -->
-  <path d="M 25 250 H 150800" stroke="#222222" stroke-width="1" fill="none"/>
+  <line x1="25" y1="150000" x2="35" y2="150000" stroke="#ffffff" stroke-width="1"/>
+  <text x="40" y="150000" font-family="Arial" font-size="10" fill="#666666" dominant-baseline="middle">30 AU</text>
 
-  <!-- 太阳：半径 23.3px，圆心在 x=0（只显示右半边） -->
-  <circle cx="0" cy="250" r="23.3" fill="#ffdd00"/>
-  <text x="30" y="255" font-family="Arial" font-size="11" fill="#000000">太阳 r=23px</text>
+  <!-- 轨道圆（以太阳为圆心的俯视轨道，大部分被裁切，只显示底部弧线） -->
+  <circle cx="250" cy="0" r="1950" fill="none" stroke="#222222" stroke-width="1"/>
+  <circle cx="250" cy="0" r="3600" fill="none" stroke="#222222" stroke-width="1"/>
+  <circle cx="250" cy="0" r="5000" fill="none" stroke="#222222" stroke-width="1"/>
+  <circle cx="250" cy="0" r="7600" fill="none" stroke="#222222" stroke-width="1"/>
+  <circle cx="250" cy="0" r="26000" fill="none" stroke="#222222" stroke-width="1"/>
+  <circle cx="250" cy="0" r="47700" fill="none" stroke="#222222" stroke-width="1"/>
+  <circle cx="250" cy="0" r="96100" fill="none" stroke="#222222" stroke-width="1"/>
+  <circle cx="250" cy="0" r="150300" fill="none" stroke="#222222" stroke-width="1"/>
+
+  <!-- 轨道径向线 -->
+  <path d="M 250 25 V 150800" stroke="#222222" stroke-width="1" fill="none"/>
+
+  <!-- 太阳：半径 23.3px，圆心在 y=0（只显示下半边） -->
+  <circle cx="250" cy="0" r="23.3" fill="#ffdd00"/>
+  <text x="280" y="18" font-family="Arial" font-size="11" fill="#ffdd00">太阳 r=23px</text>
 
   <!-- 水星：0.39 AU = 1950px，真实半径 0.08px，显示为 0.5px -->
-  <circle cx="1950" cy="250" r="0.5" fill="#aaaaaa"/>
-  <line x1="1950" y1="249" x2="1950" y2="180" stroke="#aaaaaa" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="1950" y="170" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">水星</text>
-  <text x="1950" y="182" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">0.39 AU</text>
+  <circle cx="250" cy="1950" r="0.5" fill="#aaaaaa"/>
+  <line x1="249" y1="1950" x2="180" y2="1950" stroke="#aaaaaa" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="170" y="1947" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="end">水星</text>
+  <text x="170" y="1959" font-family="Arial" font-size="7" fill="#888888" text-anchor="end">0.39 AU</text>
 
   <!-- 金星：0.72 AU = 3600px，真实半径 0.20px，显示为 0.5px -->
-  <circle cx="3600" cy="250" r="0.5" fill="#ffcc66"/>
-  <line x1="3600" y1="251" x2="3600" y2="320" stroke="#ffcc66" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="3600" y="335" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">金星</text>
-  <text x="3600" y="347" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">0.72 AU</text>
+  <circle cx="250" cy="3600" r="0.5" fill="#ffcc66"/>
+  <line x1="251" y1="3600" x2="320" y2="3600" stroke="#ffcc66" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="330" y="3597" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="start">金星</text>
+  <text x="330" y="3609" font-family="Arial" font-size="7" fill="#888888" text-anchor="start">0.72 AU</text>
 
   <!-- 地球：1.00 AU = 5000px，真实半径 0.21px，显示为 0.5px -->
-  <circle cx="5000" cy="250" r="0.5" fill="#4488ff"/>
-  <line x1="5000" y1="249" x2="5000" y2="180" stroke="#4488ff" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="5000" y="170" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">地球</text>
-  <text x="5000" y="182" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">1.00 AU</text>
+  <circle cx="250" cy="5000" r="0.5" fill="#4488ff"/>
+  <line x1="249" y1="5000" x2="180" y2="5000" stroke="#4488ff" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="170" y="4997" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="end">地球</text>
+  <text x="170" y="5009" font-family="Arial" font-size="7" fill="#888888" text-anchor="end">1.00 AU</text>
 
   <!-- 火星：1.52 AU = 7600px，真实半径 0.11px，显示为 0.5px -->
-  <circle cx="7600" cy="250" r="0.5" fill="#ff6644"/>
-  <line x1="7600" y1="251" x2="7600" y2="320" stroke="#ff6644" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="7600" y="335" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">火星</text>
-  <text x="7600" y="347" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">1.52 AU</text>
+  <circle cx="250" cy="7600" r="0.5" fill="#ff6644"/>
+  <line x1="251" y1="7600" x2="320" y2="7600" stroke="#ff6644" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="330" y="7597" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="start">火星</text>
+  <text x="330" y="7609" font-family="Arial" font-size="7" fill="#888888" text-anchor="start">1.52 AU</text>
 
   <!-- 小行星带：2.2-3.2 AU = 11000-16000px -->
-  <rect x="11000" y="245" width="5000" height="10" fill="#554433" fill-opacity="0.3"/>
-  <text x="13500" y="240" font-family="Arial" font-size="8" fill="#887766" text-anchor="middle">小行星带 2.2-3.2 AU</text>
+  <rect x="200" y="11000" width="100" height="5000" fill="#554433" fill-opacity="0.3"/>
+  <text x="330" y="13500" font-family="Arial" font-size="8" fill="#887766" text-anchor="start">小行星带 2.2-3.2 AU</text>
 
   <!-- 木星：5.20 AU = 26000px，半径 2.34px -->
-  <circle cx="26000" cy="250" r="2.34" fill="#ffcc88"/>
-  <line x1="26000" y1="247" x2="26000" y2="180" stroke="#ffcc88" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="26000" y="170" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">木星</text>
-  <text x="26000" y="182" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">5.20 AU | r=2.3px</text>
+  <circle cx="250" cy="26000" r="2.34" fill="#ffcc88"/>
+  <line x1="247" y1="26000" x2="180" y2="26000" stroke="#ffcc88" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="170" y="25997" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="end">木星</text>
+  <text x="170" y="26009" font-family="Arial" font-size="7" fill="#888888" text-anchor="end">5.20 AU | r=2.3px</text>
 
   <!-- 土星：9.54 AU = 47700px，半径 1.95px -->
-  <circle cx="47700" cy="250" r="1.95" fill="#ffddaa"/>
-  <!-- 土星环：外环约本体2.4倍 = 4.7px -->
-  <ellipse cx="47700" cy="250" rx="4.7" ry="1.5" fill="none" stroke="#ffddaa" stroke-width="0.5"/>
-  <line x1="47700" y1="251" x2="47700" y2="320" stroke="#ffddaa" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="47700" y="335" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">土星</text>
-  <text x="47700" y="347" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">9.54 AU | r=2.0px</text>
+  <circle cx="250" cy="47700" r="1.95" fill="#ffddaa"/>
+  <!-- 土星环（俯视为圆环） -->
+  <circle cx="250" cy="47700" r="4.7" fill="none" stroke="#ffddaa" stroke-width="0.5"/>
+  <line x1="255" y1="47700" x2="320" y2="47700" stroke="#ffddaa" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="330" y="47697" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="start">土星</text>
+  <text x="330" y="47709" font-family="Arial" font-size="7" fill="#888888" text-anchor="start">9.54 AU | r=2.0px</text>
 
   <!-- 天王星：19.22 AU = 96100px，半径 0.85px -->
-  <circle cx="96100" cy="250" r="0.85" fill="#aaddff"/>
-  <line x1="96100" y1="249" x2="96100" y2="180" stroke="#aaddff" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="96100" y="170" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">天王星</text>
-  <text x="96100" y="182" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">19.22 AU | r=0.9px</text>
+  <circle cx="250" cy="96100" r="0.85" fill="#aaddff"/>
+  <line x1="249" y1="96100" x2="180" y2="96100" stroke="#aaddff" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="170" y="96097" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="end">天王星</text>
+  <text x="170" y="96109" font-family="Arial" font-size="7" fill="#888888" text-anchor="end">19.22 AU | r=0.9px</text>
 
   <!-- 海王星：30.06 AU = 150300px，半径 0.82px -->
-  <circle cx="150300" cy="250" r="0.82" fill="#6688ff"/>
-  <line x1="150300" y1="251" x2="150300" y2="320" stroke="#6688ff" stroke-width="0.5" stroke-dasharray="2,2"/>
-  <text x="150300" y="335" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="middle">海王星</text>
-  <text x="150300" y="347" font-family="Arial" font-size="7" fill="#888888" text-anchor="middle">30.06 AU | r=0.8px</text>
+  <circle cx="250" cy="150300" r="0.82" fill="#6688ff"/>
+  <line x1="251" y1="150300" x2="320" y2="150300" stroke="#6688ff" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="330" y="150297" font-family="Arial" font-size="9" fill="#ffffff" text-anchor="start">海王星</text>
+  <text x="330" y="150309" font-family="Arial" font-size="7" fill="#888888" text-anchor="start">30.06 AU | r=0.8px</text>
 
   <!-- 说明文字 -->
-  <text x="500" y="485" font-family="Arial" font-size="9" fill="#555555">水星轨道距太阳中心 1950px，太阳半径 23px，比例 = 83.8:1 ✓</text>
+  <text x="250" y="150900" font-family="Arial" font-size="9" fill="#555555" text-anchor="middle">水星轨道距太阳中心 1950px，太阳半径 23px，比例 = 83.8:1 ✓</text>
 </svg>
